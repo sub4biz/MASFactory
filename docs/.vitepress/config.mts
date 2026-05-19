@@ -14,6 +14,37 @@ export default defineConfig({
     },
     siteTitle: '<span class="mf-site-title"><span class="mf-mas">MAS</span><span class="mf-factory">Factory</span></span>',
 
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索'
+              },
+              modal: {
+                displayDetails: '显示详细列表',
+                resetButtonTitle: '重置搜索',
+                backButtonTitle: '关闭搜索',
+                noResultsText: '没有结果',
+                footer: {
+                  selectText: '选择',
+                  selectKeyAriaLabel: '回车键',
+                  navigateText: '导航',
+                  navigateUpKeyAriaLabel: '上箭头',
+                  navigateDownKeyAriaLabel: '下箭头',
+                  closeText: '关闭',
+                  closeKeyAriaLabel: 'Esc 键'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
     nav: [
       { text: 'Quick Start', link: '/start/introduction' },
       { text: 'Progressive Tutorials', link: '/progressive/' },
