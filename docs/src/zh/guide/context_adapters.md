@@ -10,7 +10,7 @@ MASFactory 的一个核心目标是：把“上下文组织”从胶水代码里
 
 最终都会被统一为：**ContextBlock**，并在 `Agent.observe()` 阶段注入到 LLM 的 user prompt 中。
 
-<ThemedDiagram light="/imgs/architecture/system-overview-light.svg" dark="/imgs/architecture/system-overview-dark.svg" alt="MASFactory 系统概览：上下文适配层在整体架构中的位置" />
+<ThemedDiagram light="/imgs/architecture/system-overview.png" dark="/imgs/architecture/system-overview.png" alt="MASFactory 系统概览：上下文适配层在整体架构中的位置" />
 
 ---
 

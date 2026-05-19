@@ -8,7 +8,7 @@ MASFactory treats “LLM context” as a first-class concern and provides a unif
 
 All of them ultimately produce the same unit: **ContextBlock**, injected into the Agent user payload during `observe()`.
 
-<ThemedDiagram light="/imgs/architecture/system-overview-en-light.svg" dark="/imgs/architecture/system-overview-en-dark.svg" alt="MASFactory overview: where context adapters live" />
+<ThemedDiagram light="/imgs/architecture/system-overview.png" dark="/imgs/architecture/system-overview.png" alt="MASFactory overview: where context adapters live" />
 
 ---
 

@@ -5,8 +5,8 @@
 ## 系统架构概览
 
 <ThemedDiagram
-  light="/imgs/architecture/system-overview-light.svg"
-  dark="/imgs/architecture/system-overview-dark.svg"
+  light="/imgs/architecture/system-overview.png"
+  dark="/imgs/architecture/system-overview.png"
   alt="MASFactory 系统架构概览"
 />
 
