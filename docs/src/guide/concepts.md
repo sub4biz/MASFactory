@@ -5,8 +5,8 @@ This section introduces the core concepts of MASFactory: nodes, edges, graphs, w
 ## System Architecture Overview
 
 <ThemedDiagram
-  light="/imgs/architecture/system-overview-en-light.svg"
-  dark="/imgs/architecture/system-overview-en-dark.svg"
+  light="/imgs/architecture/system-overview.png"
+  dark="/imgs/architecture/system-overview.png"
   alt="MASFactory architecture overview"
 />
 

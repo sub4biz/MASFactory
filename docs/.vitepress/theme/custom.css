@@ -11,6 +11,7 @@
 
   /* Larger navbar logo */
   --vp-nav-logo-height: 40px;
+  --mf-nav-title-safe-width: 440px;
 
   /* Background / text (light) */
   --vp-c-bg: #ffffff;
@@ -113,6 +114,26 @@ html.dark {
 
 .mf-site-title .mf-factory {
   color: var(--vp-c-text-1);
+}
+
+/* Navbar search: the custom MASFactory title is wider than VitePress' default
+   sidebar title slot, so reserve enough desktop space before placing search. */
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar .content {
+    padding-left: var(--mf-nav-title-safe-width);
+  }
+
+  .VPNavBar.has-sidebar .VPNavBarSearch {
+    flex-grow: 0;
+    padding-left: 24px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPNavBar.has-sidebar .content {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2 + var(--mf-nav-title-safe-width));
+  }
 }
 
 /* Home hero: make the secondary line smaller */

@@ -14,6 +14,37 @@ export default defineConfig({
     },
     siteTitle: '<span class="mf-site-title"><span class="mf-mas">MAS</span><span class="mf-factory">Factory</span></span>',
 
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索',
+                buttonAriaLabel: '搜索'
+              },
+              modal: {
+                displayDetails: '显示详细列表',
+                resetButtonTitle: '重置搜索',
+                backButtonTitle: '关闭搜索',
+                noResultsText: '没有结果',
+                footer: {
+                  selectText: '选择',
+                  selectKeyAriaLabel: '回车键',
+                  navigateText: '导航',
+                  navigateUpKeyAriaLabel: '上箭头',
+                  navigateDownKeyAriaLabel: '下箭头',
+                  closeText: '关闭',
+                  closeKeyAriaLabel: 'Esc 键'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
     nav: [
       { text: 'Quick Start', link: '/start/introduction' },
       { text: 'Progressive Tutorials', link: '/progressive/' },
@@ -53,6 +84,7 @@ export default defineConfig({
           { text: 'NodeTemplate', link: '/guide/node_template' },
           { text: 'Composite Components', link: '/guide/composite_components' },
           { text: 'VibeGraphing', link: '/guide/vibegraphing' },
+          { text: 'Workflow Compatibility', link: '/guide/compatibility' },
           { text: 'Context Adapters', link: '/guide/context_adapters' },
           { text: 'Tool Calling', link: '/guide/tools' },
           { text: 'Skills', link: '/guide/skills' },
@@ -135,6 +167,7 @@ export default defineConfig({
               { text: 'NodeTemplate', link: '/zh/guide/node_template' },
               { text: '复合组件', link: '/zh/guide/composite_components' },
               { text: 'VibeGraphing', link: '/zh/guide/vibegraphing' },
+              { text: '工作流兼容层', link: '/zh/guide/compatibility' },
               { text: 'Memory/RAG/MCP', link: '/zh/guide/context_adapters' },
               { text: '工具调用', link: '/zh/guide/tools' },
               { text: 'Skills', link: '/zh/guide/skills' },
